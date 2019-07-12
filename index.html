@@ -44,7 +44,10 @@
       fbq('track', 'PageView');
       fbq('track', 'CustomEvent1');
       fbq('track', 'CustomEvent2');
-      fbq('track', 'Purchase');
+      fbq('track', 'Purchase', {
+        value: 10,
+        currency: 'USD',
+      });
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=447831556001518&ev=PageView&noscript=1"
